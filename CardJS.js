@@ -24,33 +24,6 @@ let repeat = true;
 let endDisplay = document.getElementById("endDisplay");
 endDisplay.style.display = "none";
 
-/*
-I attempted to prevent repeat questions.
-None of this works. I tried completely different things for like 3-4 hours to get it to work but it does not.
-
-while(repeat) {
-    let isDuplicate = false;
-    randCategory = Math.floor(Math.random() * 4);
-    questionNumber = Math.floor(Math.random() * 5);
-
-    randQuestion = randCategory + (questionNumber / 10);
-
-    repQuestion[triviaNumber] = randQuestion;
-    console.log(repQuestion[triviaNumber]);
-
-    repQuestion.forEach(element => {
-        if(element == randQuestion) {
-            isDuplicate = true;
-        }
-    });
-
-    if(!isDuplicate) {
-        repeat = false;
-    }
-}
-
-*/
-
 //Prevent Repeat Questions
 do {
     questionNumber = Math.floor(Math.random() * 5);
